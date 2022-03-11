@@ -13,5 +13,6 @@ int main(void)
 	{
 	putchar(str[i]);
 	}
+	printf("\n");
 	return (0);
 }
