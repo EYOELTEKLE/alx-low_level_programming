@@ -14,7 +14,7 @@ int main(void)
 	{
 	putchar(str[i]);
 	}
-	for (i = 0; i <=5; i++)
+	for (i = 0; i <= 5; i++)
 	{
 	putchar(let[i]);
 	}
