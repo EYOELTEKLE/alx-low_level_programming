@@ -17,14 +17,15 @@ int main(void)
 	{
 	for (z = 0 ; z <= 9; z++)
 	{
-	if (str[i] > str[j] || str[i] > str[z] || str[j] > str[z] || str[i] == str[j] || str[i] == str[z] || str[z] == str[j])
+	if (str[i] > str[j] || str[i] > str[z] || str[j] > str[z] || str[i] == str[j]
+	|| str[i] == str[z] || str[z] == str[j])
 	{
 	continue;
 	}
 	putchar(str[i]);
 	putchar(str[j]);
 	putchar(str[z]);
-	if (i == 7 && j == 8 && z ==9)
+	if (i == 7 && j == 8 && z == 9)
 	{
 	break;
 	}
