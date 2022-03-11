@@ -18,13 +18,14 @@ int main(void)
 	{
 	continue;
 	}
-	if (i != 9)
-	{
 	putchar(str[i]);
 	putchar(str[j]);
+	if (i == 8 && j == 9)
+	{
+	break;
+	}
 	putchar(',');
 	putchar(' ');
-	}
 	}
 	}
 	putchar('\n');
