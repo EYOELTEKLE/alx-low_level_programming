@@ -15,10 +15,16 @@ int main(void)
 	printf("%d", n);
 	printf(" is positive");
 	}
-	else
+	else if(n < 0)
 	{
 	printf("%d", n);
 	printf(" is negative");
 	}
+	else
+	{
+	printf("%d", n);
+        printf(" is zero");
+	}
+	return (0);
 	
 }
