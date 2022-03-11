@@ -15,9 +15,9 @@ int main(void)
 	putchar(str1[i]);
 	}
 	for (i = 0; i <= 25; i++)
-        {
-        putchar(str2[i]);
-        }
+	{
+	putchar(str2[i]);
+	}
 	printf("\n");
 	return (0);
 }
