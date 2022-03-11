@@ -1,12 +1,12 @@
 #include<stdio.h>
 /**
- * main - prints alphabetical letters which are numbers
+ * main - prints numbers 
  * uses the putchar function
  * Return: 0
  */
 int main(void)
 {
-	char str[] = "0123456789";
+	int str[] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
 	int i;
 
 	for (i = 0; i <= 9; i++)
