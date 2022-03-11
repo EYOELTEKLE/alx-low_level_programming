@@ -25,8 +25,8 @@ int main(void)
 	}
 	else
 	{
-	printf("%d", n);
-        printf(" is zero\n");
+		printf("%d", n);
+        	printf(" is zero\n");
 	}
 	return (0);
 }
