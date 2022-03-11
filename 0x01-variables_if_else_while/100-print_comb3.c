@@ -19,12 +19,12 @@ int main(void)
 	continue;
 	}
 	if (i != 9)
-        {
-        putchar(str[i]);
-        putchar(str[j]);
+	{
+	putchar(str[i]);
+	putchar(str[j]);
 	putchar(',');
 	putchar(' ');
-        }
+	}
 	}	
 	}
 	putchar('\n');
