@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - prints numbers 
+ * main - prints numbers
  * uses the putchar function
  * Return: 0
  */
