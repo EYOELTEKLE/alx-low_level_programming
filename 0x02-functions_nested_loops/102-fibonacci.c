@@ -16,7 +16,7 @@ printf(",");
 printf(" ");
 for (i = 3; i <= 52; i++)
 {
-	if (i != 50)
+	if (i != 52)
 	{
 	printf("%ld, ", nextTerm);
 	}
