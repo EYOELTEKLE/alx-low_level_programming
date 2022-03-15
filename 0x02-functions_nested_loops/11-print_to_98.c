@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_to_98 - prints numbers from target number upto 98
- * @n - uses integer as a paramenter
+ * @n: uses integer as a paramenter
  * Return: 0
  */
 void print_to_98(int n)
