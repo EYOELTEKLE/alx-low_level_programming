@@ -1,6 +1,6 @@
-#include<main.h>
+#include "main.h"
 /**
- *  7-print_last_digit - function that computes the last value of an integer.
+ * print_last_digit - function that computes the last value of an integer.
  * @x: The input number to check
  * Return: int.
  */
