@@ -9,19 +9,13 @@ int main(void)
 {
 int i;
 int t1 = 1, t2 = 1;
-int nextTerm = t1 + t2;
+long nextTerm = t1 + t2;
 
 printf("%d", 1);
 printf(",");
 printf(" ");
 for (i = 3; i <= 50; i++)
 {
-	if (i < 0)
-	{
-	continue;
-	}
-	else
-	{
 	if (i != 50)
 	{
 	printf("%d, ", nextTerm);
@@ -33,7 +27,6 @@ for (i = 3; i <= 50; i++)
 	t1 = t2;
 	t2 = nextTerm;
 	nextTerm =  t1 + t2;
-	}
 }
 return (0);
 }
