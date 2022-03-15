@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	printf("%ld", 4613732);
+	long sum = 4613732;
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }
