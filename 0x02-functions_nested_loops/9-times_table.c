@@ -20,7 +20,7 @@ void times_table(void)
 		if (mul !=9 )
 		{
 		_putchar(' ');
-		-putchar(' ');
+		_putchar(' ');
 		_putchar(mul + '0');
 		_putchar(',');
 		_putchar(' ');
