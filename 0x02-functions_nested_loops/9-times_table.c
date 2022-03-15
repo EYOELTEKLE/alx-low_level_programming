@@ -19,31 +19,31 @@ void times_table(void)
 		{
 		if (mul !=9 )
 		{
-		putchar(mul + '0');
-		putchar(',');
-		putchar(' ');
+		_putchar(mul + '0');
+		_putchar(',');
+		_putchar(' ');
 		}
 		else
 		{
-		putchar(mul + '0');
+		_putchar(mul + '0');
 		}
 		}
 		else
 		{
 		if (mul != 81)
 		{
-		putchar((mul / 10) + '0');
-		putchar((mul % 10) + '0');
-		putchar(',');
-		puthcar(' ');
+		_putchar((mul / 10) + '0');
+		_putchar((mul % 10) + '0');
+		_putchar(',');
+		_putchar(' ');
 		}
 		else
 		{
-		putchar((mul / 10) + '0');
-		putchar((mul % 10) + '0');
+		_putchar((mul / 10) + '0');
+		_putchar((mul % 10) + '0');
 		}
 		}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
