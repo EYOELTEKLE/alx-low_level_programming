@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<main.h>
 /**
  * main - prints vaule of zero 
  * uses the putchar function
