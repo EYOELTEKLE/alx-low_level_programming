@@ -34,6 +34,7 @@ void times_table(void)
 		{
 		if (mul != 81)
 		{
+		_putchar(' ');
 		_putchar((mul / 10) + '0');
 		_putchar((mul % 10) + '0');
 		_putchar(',');
