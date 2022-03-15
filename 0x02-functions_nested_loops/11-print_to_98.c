@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include "main.h"
 /**
  * print_to_98 - prints alphabetical letters in lowercase and lowercase
