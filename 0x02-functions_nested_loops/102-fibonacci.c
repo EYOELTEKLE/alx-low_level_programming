@@ -16,6 +16,12 @@ printf(",");
 printf(" ");
 for (i = 3; i <= 50; i++)
 {
+	if (i < 0)
+	{
+	continue;
+	}
+	else
+	{
 	if (i != 50)
 	{
 	printf("%d, ", nextTerm);
@@ -27,6 +33,7 @@ for (i = 3; i <= 50; i++)
 	t1 = t2;
 	t2 = nextTerm;
 	nextTerm =  t1 + t2;
+	}
 }
 return (0);
 }
