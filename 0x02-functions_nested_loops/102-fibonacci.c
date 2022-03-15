@@ -18,11 +18,11 @@ for (i = 3; i <= 50; i++)
 {
 	if (i != 50)
 	{
-	printf("%d, ", nextTerm);
+	printf("%ld, ", nextTerm);
 	}
 	else
 	{
-	printf("%d", nextTerm);
+	printf("%ld", nextTerm);
 	}
 	t1 = t2;
 	t2 = nextTerm;
