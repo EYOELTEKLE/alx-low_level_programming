@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _islower - function that prints the alphabet, lowercase
+ * @c: input character
  * You can only use _putchar twice in your code
  * Return: integer.
  */
