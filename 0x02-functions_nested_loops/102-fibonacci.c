@@ -14,9 +14,9 @@ long nextTerm = t1 + t2;
 printf("%d", 1);
 printf(",");
 printf(" ");
-for (i = 3; i <= 52; i++)
+for (i = 3; i <= 51; i++)
 {
-	if (i != 52)
+	if (i != 51)
 	{
 	printf("%ld, ", nextTerm);
 	}
