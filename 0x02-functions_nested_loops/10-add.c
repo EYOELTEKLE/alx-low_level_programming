@@ -1,7 +1,8 @@
-#include<main.h>
+#include "main.h"
 /**
  * add - prints sum of two fcuntion
- * uses the putchar function
+ * @x: first input
+ * @y: second input
  * Return: int.
  */
 int add(int x, int y)
