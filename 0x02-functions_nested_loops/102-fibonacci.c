@@ -28,5 +28,6 @@ for (i = 3; i <= 51; i++)
 	t2 = nextTerm;
 	nextTerm =  t1 + t2;
 }
+printf("\n");
 return (0);
 }
