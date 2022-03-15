@@ -8,10 +8,9 @@
 int main(void)
 {
 int i;
-int n;
 int t1 = 0, t2 = 1;
 int nextTerm = t1 + t2;
-n = 50;
+
 printf("%d", 1);
 printf(",");
 printf(" ");
