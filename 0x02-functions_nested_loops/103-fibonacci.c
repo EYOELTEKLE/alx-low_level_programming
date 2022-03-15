@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
  * main - prints sum of fib sequence which are divisble by two
- * uses printf 
- * Return - none
+ * uses printf
+ * Return - 0
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ long fib = t1 + t2;
 long sum;
 long i;
 
-	for (i = 0; i <= 3999998; i++)
+	for (i = 0; fib <= 4000000; i++)
 	{
 		if (fib % 2 == 0)
 		{
