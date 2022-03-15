@@ -8,7 +8,7 @@
 int main(void)
 {
 int i;
-int t1 = 0, t2 = 1;
+int t1 = 1, t2 = 1;
 int nextTerm = t1 + t2;
 
 printf("%d", 1);
