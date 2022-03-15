@@ -26,5 +26,7 @@ long i;
 		t2 = fib;
 		fib = t1 + t2;
 	}
-	printf("%d", sum);
+	printf("%ld", sum);
+	printf("\n");
+	return (0);
 }
