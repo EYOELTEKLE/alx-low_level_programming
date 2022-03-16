@@ -10,6 +10,7 @@ int main(void)
 	unsigned long t2 = 2;
 	unsigned long fib = t1 + t2;
 	unsigned long sum = 0;
+	
 	while (fib <= 4000000)
 	{
 	if (fib % 2 == 0)
