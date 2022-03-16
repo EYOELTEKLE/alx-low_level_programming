@@ -27,4 +27,6 @@ int main(void) {
 	fib = t1 + t2;
 	i++;
 	}
+	printf("\n");
+	return (0);
 }
