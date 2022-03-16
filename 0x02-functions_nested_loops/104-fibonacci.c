@@ -5,22 +5,22 @@
  * Return: 0
  **/
 int main(void) {
-	float t1 = 1;
-	float t2 = 2;
+	unsigned long t1 = 1;
+	unsigned long t2 = 2;
 	int i = 0;
-	float fib = t1 + t2;
+	unsigned long fib = t1 + t2;
     
-	printf("%f, ", t1);
-	printf("%f, ", t2);
+	printf("%lu, ", t1);
+	printf("%lu, ", t2);
 	while (i <= 96)
 	{
 	if (i != 96)
 	{
-	printf("%f, ", fib);
+	printf("%lu, ", fib);
 	}
 	else
 	{
-	printf("%f", fib);
+	printf("%lu", fib);
 	}
 	t1 = t2;
 	t2 = fib;
