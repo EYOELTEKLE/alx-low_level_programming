@@ -21,7 +21,7 @@ int main(void)
 	t2 = fib;
 	fib = t1 + t2;
 	}
-	printf("%lu", sum);
+	printf("%lu", sum + 2);
 	printf("\n");
 	return (0);
 }
