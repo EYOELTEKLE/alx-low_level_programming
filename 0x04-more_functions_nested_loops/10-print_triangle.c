@@ -10,6 +10,12 @@ void print_triangle(int size)
 	int j;
 	int space;
 
+	if (size < 0)
+	{
+	_putchar('\n');
+	}
+	else
+	{
 	for (i = 1; i <= size; i++)
 	{
 	for (space = size - i; space > 0; space--)
@@ -21,5 +27,6 @@ void print_triangle(int size)
 	_putchar(35);
 	}
 	_putchar('\n');
+	}
 	}
 }
