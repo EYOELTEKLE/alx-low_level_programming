@@ -12,6 +12,7 @@ for (i = 0; i <= n; i++)
 {
 if (n == 0)
 {
+_putchar('\n');
 break;
 }
 else
