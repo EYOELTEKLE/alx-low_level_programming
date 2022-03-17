@@ -8,7 +8,7 @@
 
 void print_numbers(void)
 {
-	int n = 0;
+	int n = 48;
 
 	while (n <= 57)
 	{
