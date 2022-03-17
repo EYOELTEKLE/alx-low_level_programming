@@ -1,30 +1,32 @@
 #include "main.h"
-
 /**
- * print_triangle - function that prints a square, followed by a new line
- * @size: size of triangle
- * Return: nothing.
- */
-
+*print_triangle - prints a left sided traingle
+*@size: size of triangle
+*Return: nothing
+*/
 void print_triangle(int size)
 {
-	int row, col, aux;
+	int i;
+	int j;
+	int space;
 
-	if (size > 0)
+	if (size <= 0)
 	{
-		for (row = 0; row < size; row++)
-		{
-			for (col = 0; col < size; col++)
-			{
-				aux = (size - row) - 1;
-				if (col < aux)
-					_putchar(' ');
-				else
-					_putchar(35);
-			}
-			_putchar('\n');
-		}
+	_putchar('\n');
 	}
 	else
-		_putchar('\n');
+	{
+	for (i = 1; i <= size; i++)
+	{
+	for (space = size - i; space > 0; space--)
+	{
+	_putchar(' ');
+	}
+	for (j = 1; j <= i; j++)
+	{
+	_putchar(35);
+	}
+	_putchar('\n');
+	}
+	}
 }
