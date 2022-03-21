@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 /**
  * _strlen - returns the size of a string
  * @s: input string
@@ -6,5 +7,5 @@
  */
 int _strlen(char *s)
 {
-	_putchar(strlen(s) + '0');
+	return (strlen(s));
 }
