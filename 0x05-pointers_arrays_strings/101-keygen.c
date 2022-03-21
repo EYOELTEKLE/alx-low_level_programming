@@ -13,7 +13,7 @@ int main(void)
 
 	srand((unsigned int) time(&t));
 
-	for (c; c < 2772; c = c + r)
+	for (c = 0; c < 2772; c = c + r)
 	{
 		r = rand() % 128;
 		if ((c + r) > 2772)
