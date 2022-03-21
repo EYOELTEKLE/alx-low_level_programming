@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int r = 0, c = 0;
+	int r = 0, c;
 	time_t t;
 
 	srand((unsigned int) time(&t));
