@@ -15,11 +15,11 @@ void puts_half(char *str)
 	}
 	if (size % 2 == 0)
 	{
-		size = ((size / 2) - 1);
+		size = size / 2;
 	}
 	else
 	{
-		size = ((size - 1) / 2) - 1;
+		size = ((size - 1) / 2);
 	}
 	i = size;
 	while (str[i] != '\0')
