@@ -7,33 +7,15 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int z, length1 = 0, count = 0;
+	int i = 0, op = 0;
 
-	while (s1[length1] != '\0')
+	while (op == 0)
 	{
-		length1++;
+		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+			break;
+		op = *(s1 + i) - *(s2 + i);
+		i++;
 	}
-	for (z = 0; z < length1; z++)
-	{
-		if (s1[z] > s2[z])
-		{
-			count++;
-		}
-		else if (s1[z] < s2[z])
-		{
-			count--;
-		}
-	}
-	if (count > 0)
-	{
-		return (15);
-	}
-	else if (count < 0)
-	{
-		return (-15);
-	}
-	else
-	{
-		return (0);
-	}
+
+	return (op);
 }
