@@ -6,35 +6,23 @@
  */
 char *leet(char *s)
 {
-	int j, length = 0;
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	for (j = 0; s[j] != '\0'; j++)
+	while (*(s + count) != '\0')
 	{
-		length++;
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
+		}
+		count++;
 	}
-	length = length - 1;
-	for (j = 0; length >= j; j++)
-	{
-		if (s[j] == 97 || s[j] == 65)
-		{
-			s[j] = 52;
-		}
-		if (s[j] == 101 || s[j] == 69)
-		{
-			s[j] = 51;
-		}
-		if (s[j] == 79 || s[j] == 111)
-		{
-			s[j] = 48;
-		}
-		if (s[j] == 84 || s[j] == 116)
-		{
-			s[j] = 55;
-		}
-		if (s[j] == 108 || s[j] == 76)
-		{
-			s[j] = 49;
-		}
-	}
+
 	return (s);
 }
