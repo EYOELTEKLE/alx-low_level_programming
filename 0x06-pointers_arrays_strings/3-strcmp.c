@@ -7,9 +7,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int length1 = 0;
-	int z;
-	int count = 0;
+	int z, length1 = 0, count = 0;
 
 	while (s1[length1] != '\0')
 	{
@@ -24,10 +22,6 @@ int _strcmp(char *s1, char *s2)
 		else if (s1[z] < s2[z])
 		{
 			count--;
-		}
-		else
-		{
-			continue;
 		}
 	}
 	if (count > 0)
