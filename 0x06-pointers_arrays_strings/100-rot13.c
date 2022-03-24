@@ -6,36 +6,24 @@
  */
 char *rot13(char *s)
 {
-	char lower[] = "abcdefghijklmnopqrstuvwxyz";
-	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int j, i, c;
+	int i = 0;
+	int j = 0;
+	char *l = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+	char *r13 = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
 
-	for (j = 0; s[j] != '\0'; j++)
+	while (*(s + i) != '\0')
 	{
-		if (s[j] >= 97 && s[j] <= 122)
+		while (*(l + j) != '\0')
 		{
-			for (i = 0; i <= 25; i++)
+			if (*(s + i) == *(l + j))
 			{
-			if (s[j] == lower[i])
-			{
+				*(s + i)  = *(r13 + j);
 				break;
 			}
-			}
-			c = (i + 13) % 26;
-			s[j] = lower[c];
+			j++;
 		}
-		if (s[j] >= 65 && s[j] <= 90)
-		{
-			for (i = 0; i <= 25; i++)
-			{
-			if (s[j] == upper[i])
-			{
-				break;
-			}
-			}
-			c = (i + 13) % 26;
-			s[j] = upper[c];
-		}
+		j = 0;
+		i++;
 	}
 	return (s);
 }
