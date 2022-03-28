@@ -7,19 +7,37 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i;
-	unsigned int j;
-	unsigned int count = 0;
+	int j = 0, output = 0;
 
-	for (i = 0; s[i] != ',' || s[i] != ' '; i++)
+	for (; s[j] != '\0'; j++)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		if (_strchr(accept, s[j]) == NULL)
 		{
-			if (s[i] == accept[j])
-			{
-				count++;
-			}
+			break;
 		}
+		output++;
 	}
-	return (count);
+	return (output);
+}
+
+/**
+ * _strchr - function that fills memory with a constant byte.
+ * @s: destenation of string
+ * @c: character to replace
+ *
+ * Return: a pointer to the resulting string
+ */
+
+char *_strchr(char *s, char c)
+{
+	int j = 0;
+
+	for (; s[j] != '\0' && s[j] != c; j++)
+	{
+		continue;
+	}
+	if (s[j] == c)
+		return (s + j);
+	else
+		return (NULL);
 }
