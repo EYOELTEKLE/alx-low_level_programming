@@ -1,9 +1,10 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
  * print_diagsums - sums the diagonal elements of an array
  * @a: input array
  * @size:size of the array
+ * Return: nothing
  */
 void print_diagsums(int *a, int size)
 {
