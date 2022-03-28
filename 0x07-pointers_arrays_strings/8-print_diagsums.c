@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.hi>
+#include <stdio.h>
 /**
  * print_diagsums - sums the diagonal elements of an array
  * @a: input array
@@ -26,5 +26,4 @@ void print_diagsums(int *a, int size)
 		}
 	}
 	printf("%d, %d", sum1, sum2);
-	return (0);
 }
