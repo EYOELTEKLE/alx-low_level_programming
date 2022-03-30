@@ -16,7 +16,7 @@ int sqr(int n, int i)
 		return (-1);
 	}
 	i++;
-	sqr(n, i);
+	return (sqr(n, i));
 }
 /**
  * _sqrt_recursion - recursion caller
