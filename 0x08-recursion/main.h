@@ -10,3 +10,4 @@ int getNumPrim(int num, int i);
 int is_palindrome(char *s);
 int sqr(int n, int i);
 int checker(int n, int i);
+int check(int i, int length, char *s);
