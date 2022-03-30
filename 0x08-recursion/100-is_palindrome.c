@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
  * check - checks palindrome
  * @s: input string
