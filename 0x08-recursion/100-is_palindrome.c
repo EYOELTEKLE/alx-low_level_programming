@@ -1,48 +1,56 @@
 #include "main.h"
+
 /**
- * check - checks palindrome
- * @s: input string
- * @i: input iterator
- * @length: array length
- * Return: integer
+ * start - function to check if the first and last letters match
+ * @a: start index of string
+ * @b: end index of string
+ * @s: string to be checked
+ * @flag: value holder for checker
+ *
+ * Return: void function
  */
-int check(int i, int length, char *s)
+
+void start(char *s, int a, int b, int *flag)
 {
-	if (i != length / 2)
+	if (a < b + 1)
 	{
-		if (s[i] == s[length - i - 1])
-		{
-			i++;
-		}
-		else if (i == length - 1)
-		{
-			return (1);
-		}
-		else if (i == length && i != length - 1)
-		{
-			return (0);
-		}
+		if (s[a] != s[b])
+			*flag *= 0;
+		else
+			*flag *= 1;
+		start(s, a + 1, b - 1, flag);
 	}
-	i++;
-	return (check(i, length, s));
 }
+
+
 /**
- * is_palindrome - main recursor
- * @s: input pointer to a string
- * Return: integer
+ * _strlen_recursion - function to print length of string
+ * @s: string to be checked
+ *
+ * Return: lenght of string
  */
+
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
+}
+
+
+/**
+ * is_palindrome - function to check if its palindrome
+ * @s: string to be checked
+ *
+ * Return: flag
+ */
+
 int is_palindrome(char *s)
 {
-	int i = 0;
-	int length;
+	int flag = 1;
 
-	for (length = 0; s[length] != '\0'; s++)
-	{
-		length++;
-	}
-	if (s[i] == '\0')
-	{
-		return (1);
-	}
-	return (check(i, length, s));
+	if (_strlen_recursion(s) == 0)
+		return (flag);
+	start(s, 0, _strlen_recursion(s) - 1, &flag);
+	return (flag);
 }
