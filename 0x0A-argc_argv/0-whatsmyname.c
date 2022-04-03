@@ -1,15 +1,24 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+
 /**
- * main - prints its name + \n
- * @argc: number of arguments typed
- * @argv: array pointing to arguements
- * Return: 0
+ * main - program that prints its name
+ * @argc: argument count
+ * @argv: argunment vector
+ *
+ * Return: int
  */
+
 int main(int argc, char *argv[])
 {
-	argc = 0;
+	int count;
 
-	printf("%s\n", argv[argc]);
+	for (count = 0; count < argc; count++)
+	{
+		if (argc == 1)
+			printf("%s\n", argv[count]);
+		else
+			break;
+	}
 	return (0);
 }
