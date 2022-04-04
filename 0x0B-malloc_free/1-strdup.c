@@ -9,6 +9,7 @@ char *_strdup(char *str)
 {
 	char *copy;
 	unsigned int i;
+	unsigned int length = 0;
 
 	if (str == NULL)
 	{
@@ -16,7 +17,11 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		copy = malloc(sizeof(char) * 3);
+		for (i = 0; str[i] != '\0'; i++)
+		{
+			length = length + 1;
+		}
+		copy = malloc(sizeof(char) * length);
 		if (copy == NULL)
 		{
 			return (NULL);
@@ -25,6 +30,6 @@ char *_strdup(char *str)
 		{
 			copy[i] = str[i];
 		}
-		return (copy);	
+		return (copy);
 	}
 }
