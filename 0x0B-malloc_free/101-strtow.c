@@ -36,7 +36,22 @@ void free_everything(char **string, int i)
 		free(string[--i]);
 	free(string);
 }
-
+/**
+ * extra - additional func
+ * @words: 2d array
+ * @b: number
+ * @c: number
+ * @str: string
+ * Return: integer
+ */
+int extra(char **words, int b, int c, char *str)
+{
+	words[b][c] = '\0';
+	b++;
+	c = 0;
+	length++;
+	str++;
+}
 /**
  * strtow - function that splits string into words
  * @str: string being passed
@@ -79,11 +94,7 @@ char **strtow(char *str)
 				found_word++;
 				c++;
 			}
-			words[b][c] = '\0';
-			b++;
-			c = 0;
-			length = 0;
-			str++;
+			extra(words, b, c, length, str);
 		}
 	}
 	return (words);
