@@ -38,13 +38,14 @@ void free_everything(char **string, int i)
 }
 /**
  * extra - additional func
- * @words: 2d array
+ * @words: pointer to array
  * @b: number
  * @c: number
- * @str: string
- * Return: integer
+ * @length: number
+ * @str: pointer to string
+ * Return: none
  */
-int extra(char **words, int b, int c, char *str)
+void extra(char **words, int b, int c, int length, char *str)
 {
 	words[b][c] = '\0';
 	b++;
