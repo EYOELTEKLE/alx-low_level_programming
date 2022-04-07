@@ -62,7 +62,7 @@ char *iterate_zeroes(char *str)
 {
 	while (*str && *str == '0')
 		str++;
-s
+
 	return (str);
 }
 
