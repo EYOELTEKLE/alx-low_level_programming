@@ -1,13 +1,13 @@
 #include "lists.h"
 /**
  * reverse_listint - reverses the LL
- * @pointer: double pointer to a head node
+ * @head: double pointer to a head node
  * Return: pointer
  */
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *q;
-	listint_t *p = *head;;
+	listint_t *p = *head;
 
 	if (p->next == NULL)
 	{	*head = p;
