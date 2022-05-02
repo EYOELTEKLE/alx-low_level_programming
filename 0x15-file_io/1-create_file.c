@@ -7,22 +7,32 @@
  * @text_content: file content
  * Return: integer
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
-	int o, r, len;
+	int fd;
+	int nletters;
+	int rwr;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
-	if (text_content != NULL)
+
+	fd = open(filename, O_WRONLY | O_APPEND);
+
+	if (fd == -1)
+		return (-1);
+
+	if (text_content)
 	{
-		for (len = 0; text_content[len];)
-			len++;
-	}
-	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	r = write(o, text_content, len);
+		for (nletters = 0; text_content[nletters]; nletters++)
+			;
 
-	if (o == -1 || r == -1)
-		return (-1);
-	close(o);
+		rwr = write(fd, text_content, nletters);
+
+		if (rwr == -1)
+			return (-1);
+	}
+
+	close(fd);
+
 	return (1);
 }
